@@ -32,7 +32,22 @@
 # L[-1] = 'Adam'
 # L[0] = 'Bart'
 # print L
-t= (0,1,2,3,4,5,6,7,8,9)
-print t
-t = ('Adam',)
-print t
+# t= (0,1,2,3,4,5,6,7,8,9)
+# print t
+# t = ('Adam',)
+# print t
+# d = {
+#     95: 'Adam',
+#     85: 'Lisa',
+#     59: 'Bart'
+# }
+# d['Paul'] = 72
+# print d;
+
+#Function in Python
+L = []
+x = 1
+while x <= 100:
+    L.append(x*x);
+    x = x + 1
+print sum(L)
