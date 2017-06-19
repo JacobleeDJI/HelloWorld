@@ -44,10 +44,36 @@
 # d['Paul'] = 72
 # print d;
 
-#Function in Python
-L = []
-x = 1
-while x <= 100:
-    L.append(x*x);
-    x = x + 1
-print sum(L)
+#Function1 in Python
+# L = []
+# x = 1
+# while x <= 100:
+#     L.append(x*x);
+#     x = x + 1
+# print sum(L)
+
+#Function2 in Python
+# def square_of_sum(L):
+#     sum = 0
+#     for x in L:
+#         sum = sum + x * x
+#     return sum
+# print square_of_sum([1,2,3,4,5])
+# print square_of_sum([-4,0,5,15,25])
+
+#Function3 in Python
+# import math
+#
+# def quardratic_equation(a,b,c):
+#     t = math.sqrt(b * b - 4 * a * c)
+#     return (-b + t) / (2 * a), (-b - t) / (2 * a)
+# print quardratic_equation(2,3,0)
+# print quardratic_equation(1,-6,5)
+
+#切片
+L = range(1,101)
+
+print L[0:10]
+print L[2::3]
+print L[5:50:5]
+
