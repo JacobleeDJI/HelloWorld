@@ -71,9 +71,14 @@
 # print quardratic_equation(1,-6,5)
 
 #切片
-L = range(1,101)
+# L = range(1,101)
+#
+# print L[0:10]
+# print L[2::3]
+# print L[5:50:5]
 
-print L[0:10]
-print L[2::3]
-print L[5:50:5]
+#切片2
+L = range(1, 101)
 
+print L[-10:]
+print L[-46::5]
