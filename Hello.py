@@ -78,7 +78,19 @@
 # print L[5:50:5]
 
 #切片2
-L = range(1, 101)
+# L = range(1, 101)
+#
+# print L[-10:]
+# print L[-46::5]
 
-print L[-10:]
-print L[-46::5]
+# 切片3
+# 编写一个函数，可以把字符串的首字母变成大写
+# def firstChartUpper(s):
+#     return s[0].upper() + s[1:]
+#
+# print firstChartUpper('hello')
+
+L = range(1, 101)
+for i in L:
+    if i % 7 == 0:
+        print i
