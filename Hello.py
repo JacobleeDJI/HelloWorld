@@ -90,7 +90,24 @@
 #
 # print firstChartUpper('hello')
 
-L = range(1, 101)
-for i in L:
-    if i % 7 == 0:
-        print i
+# L = range(1, 101)
+# for i in L:
+#     if i % 7 == 0:
+#         print i
+
+#python高阶函数
+# import math
+# def sA(x,y,f):
+#     return f(x) + f(y)
+#
+# print sA(25,9,math.sqrt)
+
+# def format_name(s):
+#     return s[0].upper() + s[1:].lower()
+#
+# print map(format_name,['adam', 'LISA', 'barT'])
+
+def f(x,y):
+    return x*y
+
+print reduce(f,[2,4,5,7,12])
