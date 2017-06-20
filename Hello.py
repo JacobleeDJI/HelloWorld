@@ -107,7 +107,25 @@
 #
 # print map(format_name,['adam', 'LISA', 'barT'])
 
-def f(x,y):
-    return x*y
+# def f(x,y):
+#     return x*y
+#
+# print reduce(f,[2,4,5,7,12])
 
-print reduce(f,[2,4,5,7,12])
+# import math
+#
+# def is_sqrt(x):
+#     r = int(math.sqrt(x))
+#     return r*r == x
+# print filter(is_sqrt, range(1,101))
+
+# def cmp_ignore_case(s1,s2):
+#     u1 = s1.upper()
+#     u2 = s2.upper()
+#     if u1 < u2:
+#         return -1
+#     if u1 > u2:
+#         return 1
+#     return 0
+#
+# print sorted(['bob', 'about', 'Zoo', 'Credit'], cmp_ignore_case)
