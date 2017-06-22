@@ -154,3 +154,10 @@
 # if __name__=='__main__':
 #     test()
 
+# __slots__
+# class Student(object):
+#     pass
+#
+# s = Student()
+# s.name = 'Michale'
+# print (s.name)
