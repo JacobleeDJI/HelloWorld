@@ -129,3 +129,28 @@
 #     return 0
 #
 # print sorted(['bob', 'about', 'Zoo', 'Credit'], cmp_ignore_case)
+
+# 匿名函数 lambda
+
+#Moudle
+#!/usr/bin/env python3
+# _*_ coding: utf-8 _*_
+
+# 'a test moudle'
+#
+# __author__ = 'Jacob lee'
+#
+# import sys
+#
+# def test():
+#     args = sys.argv
+#     if len(args) == 1:
+#         print ('Hello, world!')
+#     elif len(args) == 2:
+#         print ('Helllo, %S!' % args[1])
+#     else:
+#         print ('Too many argumnts!')
+#
+# if __name__=='__main__':
+#     test()
+
