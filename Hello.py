@@ -183,6 +183,10 @@
 with open('path/to/file', 'r') as f:
     print (f.read())
 
-#读取二进制文件
+#读取二进制文件 图片、视频等
 f = open('Users/jacob/test.jpg', 'rb')
+f.read()
+
+#要读取非UTF-8编码的文本文件，需要给open()函数传入encoding参数，例如，读取GBK编码的文件
+f = open('Users/jacob/gbk.txt', 'r', encoding='gbk')
 f.read()
