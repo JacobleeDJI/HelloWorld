@@ -161,3 +161,28 @@
 # s = Student()
 # s.name = 'Michale'
 # print (s.name)
+
+# class Student(object):
+#     __slots__ = ('name', 'age')
+#
+# s = Student() #创建新的实例
+# s.name = 'Michale'
+# s.age = 25
+
+# class Screen(object):
+#     @property
+#     def width_heigth(self, width, height):
+#         return self.width_heigth
+#     @width_heigth.setter
+#     def width_height(self, width, height):
+#         self._width = width
+#         self._height = height
+
+#读文件
+# f = open('Users/Jacob/text.txt', 'r')
+with open('path/to/file', 'r') as f:
+    print (f.read())
+
+#读取二进制文件
+f = open('Users/jacob/test.jpg', 'rb')
+f.read()
