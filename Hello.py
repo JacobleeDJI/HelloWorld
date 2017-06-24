@@ -166,7 +166,7 @@
 #     __slots__ = ('name', 'age')
 #
 # s = Student() #创建新的实例
-# s.name = 'Michale'
+# s.name = 'Michale'
 # s.age = 25
 
 # class Screen(object):
@@ -179,14 +179,42 @@
 #         self._height = height
 
 #读文件
-# f = open('Users/Jacob/text.txt', 'r')
-with open('path/to/file', 'r') as f:
-    print (f.read())
+# # f = open('Users/Jacob/text.txt', 'r')
+# with open('path/to/file', 'r') as f:
+#     print (f.read())
 
 #读取二进制文件 图片、视频等
-f = open('Users/jacob/test.jpg', 'rb')
-f.read()
+# f = open('Users/jacob/test.jpg', 'rb')
+# f.read()
+#
+# #要读取非UTF-8编码的文本文件，需要给open()函数传入encoding参数，例如，读取GBK编码的文件
+# f = open('Users/jacob/gbk.txt', 'r', encoding='gbk')
+# f.read()
 
-#要读取非UTF-8编码的文本文件，需要给open()函数传入encoding参数，例如，读取GBK编码的文件
-f = open('Users/jacob/gbk.txt', 'r', encoding='gbk')
-f.read()
+# String io
+# from io import StringIO
+# f = StringIO()
+# f.write('hello')
+# f.write(' ')
+# f.write('wrold!')
+#
+# print (f.getvalue())
+
+#多线程
+import time, threading
+
+#新线程执行的代码
+def loop():
+    print ('thread %s is running...' % threading.current_thread().name)
+    n = 0
+    while n < 5:
+        n = n + 1
+        print ('thread %s >>> %s' % (threading.current_thread().name), n)
+        time.sleep(1)
+    print ('thread %s ended.' % threading.current_thread().name)
+
+print ('thread %s is running...' % threading.current_thread().name)
+t = threading.Thread(target=loop, name='LoopThread')
+t.start()
+t.join()
+print ('thread %s ended.' % threading.current_thread().name)
